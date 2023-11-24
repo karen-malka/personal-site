@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <title>Karen Shamir</title>
+</head>
+
+<body>
+  <div class="homepage-head">
+    <header>
+      <button id="menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div id="nav" class="hidden">
+        <nav>
+          <ul>
+            <li class="button-list"><button id="xbutton">X</button></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="design.html">Design</a></li>
+          </ul>
+        </nav>
+      </div>
+      <picture class="profile">
+        <img src="images/karen-photo.png" alt="" width="1339" height="1339">
+      </picture>
+      <div>
+        <h1>Karen Shamir</h1>
+        <h2>Sophomore at <em>Cornell University</em>, studying Computer Science</h2>
+        <button id="contact-me">
+          Contact Me
+        </button>
+        <div id="contact-form" class="hidden">
+          <form action="contactform.php" method="post" enctype="text/plain">
+            Name<br><input type="text" name="Name"><br>
+            Email<br><input type="text" name="Email"><br>
+            Message<br><textarea name="Message" placeholder="Type your message here..."></textarea><br>
+            <button id="submit-button" type="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+        <button id="scroll-down">&#11167;</button>
+      </div>
+    </header>
+  </div>
+
+  <p>
+    stuff
+  </p>
+</body>
+<script src="scripts/jquery-3.7.1.js"></script>
+<script src="scripts/scroll-down.js"></script>
+<script src="scripts/nav-menu.js"></script>
+<script src="scripts/contact-me.js"></script>
+
+</html>
