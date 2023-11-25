@@ -137,6 +137,9 @@ nav ul li a {
 }
 
 #xbutton {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
   z-index: 3;
   width: 35px;
   height: 25px;
