@@ -7,52 +7,139 @@
 </head>
 
 <body>
+  <div id="home"></div>
   <div class="homepage-head">
     <header>
-      <button id="menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </button>
-      <div id="nav" class="hidden">
-        <nav>
-          <ul>
-            <li class="button-list"><button id="xbutton">X</button></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="design.html">Design</a></li>
-          </ul>
-        </nav>
-      </div>
+
       <picture class="profile">
         <img src="images/karen-photo.png" alt="" width="1339" height="1339">
       </picture>
       <div>
         <h1>Karen Shamir</h1>
+        <ul>
+          <li><button id="projects-button">My Projects</button></li>
+          <li><button id="design-button">My Design</button></li>
+        </ul>
         <h2>Sophomore at <em>Cornell University</em>, studying Computer Science</h2>
-        <button id="contact-me">
-          Contact Me
-        </button>
-        <div id="contact-form" class="hidden">
-          <form action="whatever.php" method="post" enctype="text/plain">
-            Name<br><input type="text" name="Name"><br>
-            Email<br><input type="text" name="Email"><br>
-            Message<br><textarea name="Message" placeholder="Type your message here..."></textarea><br>
-            <button id="submit-button" type="submit" value="Submit">Submit</button>
-          </form>
+        <div class="contact">
+          <a href="contact-form.html"><button id="contact-me">
+              Contact Me
+            </button></a>
         </div>
-        <button id="scroll-down">&#11167;</button>
+        <button id="scroll-up">&#11165;</button>
       </div>
     </header>
   </div>
 
-  <p>
-    stuff
-  </p>
+  <div class="two-column">
+    <div class="design-process">
+      <h2>My Design Process</h2>
+      <p>I first <em>identify</em> what exactly I am creating and why: who is the audience?
+        what are they looking for?</p>
+      <p>Then I <em>research</em> and explore what my client(s)/user(s) goals are: including noting past attempts
+        at solutions, conducting user interviews, discovering the current market</p>
+      <p><em>Planning and Design</em> are key aspects of the process where I create wireframes, sketches, and outlines
+        with an emphasis on finding a balance between common design patterns and new creative aspects</p>
+      <p>Once I prepared the user interface, I enhance the user experience with <em>prototyping</em> where I build the
+        mockup of the product, highlighting usability as top priority</p>
+      <p>The final step is <em>testing</em> where I ensure that my design is fit
+        for the user(s)/client(s), and I analyze the results and repeat the process, if necessary!</p>
+    </div>
+    <div>
+      <video width="1000" height="700" playsinline muted autoplay loop>
+        <source src="images/design-process.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div id="projects"></div>
+
+  <h1 class="heading">Projects</h1>
+
+  <h2 class="design-heading">Websites</h2>
+  <div class="two-column">
+    <div class="website-box" style="background-color: #BBB0FF">
+      <a href="https://cornell-info1300-2023fa.github.io/ks959-project2/"><img src="images/apple-fest.png" alt=""></a>
+      <p>created to advertise the Ithaca Apple Harvest Festival 2023</p>
+      <p>coded using html/css</p>
+    </div>
+    <div class="website-box" style="background-color: #FFF197;">
+
+    </div>
+  </div>
+  <div class="two-column">
+    <div class="website-box" style="background-color: #CFFFA0;">
+      <a href="https://radiantrecipesforus.com/"><img src="images/recipes-logo.JPG" alt="" width="1080"
+          height="1080"></a>
+      <p>created to provide original homemade recipes and donation opportunities for food banks</p>
+      <p>software used: WordPress</p>
+      <p>features include: interactive elements, sliders, and posts</p>
+    </div>
+    <div class="website-box" style="background-color: #EDAFC7">
+      <a href="https://stemforstudents.wixsite.com/bestem" alt=""><img src="images/bestem-logo.PNG" alt=""></a>
+      <p>created to provide resources and opportunities for low income students</p>
+      <p>software used: Wix</p>
+      <p>features include: animations, diagrams, varying layouts</p>
+    </div>
+  </div>
+
+  <h2 class="design-heading">High School Academy Prototype</h2>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin-left: 10px;" width="500" height="450"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGqQCnxXZtXWQZow9wQHnOq%2FHigh-School-Academy-(Community)%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26scaling%3Dscale-down%26mode%3Ddesign%26t%3DqQsmMVRrRzTX3Z9d-1"
+    allowfullscreen></iframe>
+
+  <div id="design"></div>
+
+  <h1 class="heading">Design</h1>
+
+  <h2 class="design-heading">
+    DIGITAL ART
+  </h2>
+  <div class="pic-grid">
+    <div class="grid-row">
+      <picture>
+        <img src="images/alon-drawing.jpg" alt="" width="1080" height="1080">
+      </picture>
+      <picture>
+        <img src="images/flower-drawing-2.jpg" alt="" width="1080" height="1080">
+      </picture>
+      <picture>
+        <img src="images/flower-drawing.jpg" alt="" width="1080" height="1080">
+      </picture>
+    </div>
+    <div class="grid-row">
+      <picture>
+        <img src="images/hotair-balloon-drawing.jpg" alt="" width="1080" height="1080">
+      </picture>
+      <picture>
+        <img src="images/mountain-drawing.jpg" alt="" width="1080" height="1080">
+      </picture>
+      <picture>
+        <img src="images/karen-drawing.jpg" alt="" width="1080" height="1080">
+      </picture>
+    </div>
+  </div>
+  <h2 class="design-heading">
+    LOGOS
+  </h2>
+  <div class="logo-grid">
+    <picture>
+      <img src="images/raw-logo.PNG" alt="" width="650" height="220">
+    </picture>
+    <picture>
+      <img src="images/cure-logo-website.PNG" alt="" width="1080" height="1080">
+    </picture>
+    <picture>
+      <img src="images/stem-gems-logo-website.png" alt="" width="1080" height="1080">
+    </picture>
+    <picture>
+      <img src="images/hillel-across-cornell-logo.PNG" alt="" width="1080" height="1080">
+    </picture>
+  </div>
+
+
 </body>
 <script src="scripts/jquery-3.7.1.js"></script>
 <script src="scripts/scroll-down.js"></script>
-<script src="scripts/nav-menu.js"></script>
-<script src="scripts/contact-me.js"></script>
 
 </html>
