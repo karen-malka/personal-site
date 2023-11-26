@@ -15,9 +15,3 @@ $("#design-button").click(function () {
     scrollTop: $("#design").offset().top
   }, 1000);
 });
-
-$("#scroll-up").click(function () {
-  $('html, body').animate({
-    scrollTop: $("#home").offset().top
-  }, 1000);
-});
