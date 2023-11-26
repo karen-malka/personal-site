@@ -1,4 +1,19 @@
 <?php
+// update with your recipients
+$to = "kshamir2@gmail.com";
+// update with your email subject
+$subject = "Contact Me Form";
+
+$name = $_POST['Name'];
+$email_address = $_POST['Email'];
+$message = $_POST['Message'];
+
+// calling the mail function to send the mail using the hosted web server.
+mail($to,$subject,$message,[$name, $email_address]);
+?>
+
+
+/*
     $errors = '';
     $myemail = 'kshamir2@gmail.com';
     if(empty($_POST['Name'])  ||
@@ -29,5 +44,5 @@
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
     header('Location: contact-form-thank-you.html');
-    }
+    }*/
     ?>
