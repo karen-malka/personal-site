@@ -178,6 +178,10 @@ picture {
   border-radius: 10px;
 }
 
+.project-caption {
+  font-size: 20px;
+}
+
 video {
   margin-top: 30px;
   width: 90%;
