@@ -25,9 +25,9 @@ div.homepage-head {
   text-align: center;
 }
 
-#back-button {
+.back-button {
   font-size: 50px;
-  color: black;
+  color: white;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -35,7 +35,7 @@ div.homepage-head {
   left: 10px;
 }
 
-#back-button:hover {
+.back-button:hover {
   cursor: pointer;
 }
 
@@ -51,7 +51,7 @@ div.homepage-head {
 
 h2 {
   font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 
@@ -206,4 +206,132 @@ div.design-process {
 .resume {
   margin: 0px;
   padding: 0px;
+}
+
+/*styles for design process pages*/
+.design-process1 {
+  background-color: black;
+}
+
+.design-process2 {
+  background-color: grey;
+  color: black;
+}
+
+.process-heading {
+  margin: 0px;
+  margin-left: 10px;
+  text-align: left;
+  background: none;
+  color: white;
+}
+
+.design-explanations {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.design-explanations p {
+  line-height: 1.5;
+}
+
+.design-explanations div {
+  width: 50%;
+  height: auto;
+}
+
+.design-explanations img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.design-list li {
+  text-align: left;
+  list-style: disc;
+}
+
+.explanations {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.explanations img {
+  width: 100%;
+}
+
+.design-sketches {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+img.color-scheme {
+  width: 50%;
+}
+
+.case-study {
+  width: 40%;
+  height: 50px;
+  margin: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.case-study:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, black, grey);
+  color: white;
+}
+
+.case-study2 {
+  color: black;
+  background-color: grey;
+}
+
+.center-div {
+  text-align: center;
+}
+
+.three-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.three-column div {
+  width: 33%;
+}
+
+img.code {
+  margin-left: 0px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+div.two-versions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.two-versions div {
+  width: 50%;
+  text-align: center;
+}
+
+.two-versions img {
+  width: 95%;
+  border-radius: 0px;
+}
+
+img.apple {
+  width: 35%;
 }
