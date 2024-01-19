@@ -308,6 +308,22 @@ img.color-scheme {
   width: 33%;
 }
 
+@media (max-width: 1000px) {
+  .three-column {
+    flex-direction: column;
+  }
+
+  .three-column div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .three-column div img {
+    width: 50%;
+    height: auto;
+  }
+}
+
 img.code {
   margin-left: 0px;
 }
