@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: linear-gradient(to bottom, black, grey);
+  background-color: black;
   color: white;
 }
 
@@ -309,18 +309,13 @@ img.color-scheme {
 }
 
 @media (max-width: 1000px) {
-  .three-column {
+  .two-column {
     flex-direction: column;
   }
 
-  .three-column div {
+  .two-column div {
     text-align: center;
     width: 100%;
-  }
-
-  .three-column div img {
-    width: 50%;
-    height: auto;
   }
 }
 
