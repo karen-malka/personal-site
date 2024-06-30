@@ -161,17 +161,42 @@ picture {
   text-align: center;
 }
 
-.website-box {
+.two-column div .image-box {
+  width: 90%;
+}
+
+h3.case-text {
+  opacity: 0;
+}
+
+.image-box:hover {
+  position: relative;
+}
+
+.image-box:hover img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.image-box:hover h3 {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-box {
   margin: 10px;
-  border: solid;
   border-radius: 10px;
   padding: 10px;
-  color: black;
+  color: white;
+  text-align: center;
+  position: static;
 }
 
 .website-box img {
   display: block;
-  width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
