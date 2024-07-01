@@ -128,7 +128,7 @@
     <h1 class="heading">Design</h1>
 
     <h2 class="design-heading">PROJECTS</h2>
-    <div class="two-column">
+    <!-- <div class="two-column">
       <div>
         <h3>Adaptive Young Learner Assessment Student Reports</h3>
         <object
@@ -149,11 +149,12 @@
           style="border: 1px solid white"
         ></object>
       </div>
-    </div>
+    </div> -->
     <div class="two-column">
       <div>
         <h3>Forum Landing Page Example</h3>
         <img
+          id="forum"
           src="images/forum-landing-page.png"
           width="95%"
           style="border: 1px solid white"
@@ -162,6 +163,7 @@
       <div>
         <h3>Support Center Landing Page Example</h3>
         <img
+          id="support-center"
           src="images/support-center-landing-page.png"
           width="95%"
           style="border: 1px solid white"
@@ -331,7 +333,23 @@
         <img src="images/igor-logo.png" alt="" width="650" height="220" />
       </picture>
     </div>
+    <div id="myModal" class="modal hidden">
+      <button id="close" aria-label="close">X</button>
+      <img
+        class="modal-content hidden"
+        id="support-center-large"
+        src="images/support-center-landing-page.png"
+        alt="Support Center Landing Page"
+      />
+      <img
+        class="modal-content hidden"
+        id="forum-large"
+        src="images/forum-landing-page.png"
+        alt="Forum Landing Page"
+      />
+    </div>
   </body>
   <script src="scripts/jquery-3.7.1.js"></script>
   <script src="scripts/scroll-down.js"></script>
+  <script src="scripts/modal.js"></script>
 </html>
