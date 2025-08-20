@@ -10,8 +10,28 @@
       <nav>
         <ul>
           <li><button id="home-button">Home</button></li>
-          <li><button id="projects-button">My Projects</button></li>
-          <li><button id="design-button">My Designs</button></li>
+          <li class="dropdown">
+            <button id="projects-button">Projects</button>
+            <ul class="dropdown-content">
+              <li id="websites-button"><a href="#websites">Websites</a></li>
+              <li id="prototypes-button">
+                <a href="#prototypes">Prototypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button id="design-button">Designs</button>
+            <ul class="dropdown-content">
+              <li id="design-projects-button">
+                <a href="#design-projects">Wireframes</a>
+              </li>
+              <li id="digital-art-button">
+                <a href="#digital-art">Digital Art</a>
+              </li>
+              <li id="logos-button"><a href="#logos">Logos</a></li>
+            </ul>
+          </li>
+          <li><button id="photography-button">Photography</button></li>
           <li>
             <a href="resume.html"><button>Resume</button></a>
           </li>
@@ -23,9 +43,9 @@
         <img src="images/karen-photo.png" alt="" width="1339" height="1339" />
       </picture>
       <div>
-        <h1>Karen Shamir</h1>
-        <h2>
-          Junior at <em>Cornell University</em>, studying Computer Science with
+        <h1 class="karen">Karen Shamir</h1>
+        <h2 class="desc">
+          Senior at <em>Cornell University</em>, studying Computer Science with
           a specialization in UX Design
         </h2>
       </div>
@@ -70,10 +90,141 @@
 
     <h1 class="heading">Projects</h1>
 
-    <h2 class="design-heading">Websites</h2>
+    <h2 class="design-heading" id="websites">WEBSITES</h2>
+    <div class="two-column">
+      <div class="image-box">
+        <a
+          href="https://karen-malka.github.io/research-at-waterford/"
+          target="_blank"
+          ><img
+            class="case-image"
+            src="images/Waterford Website.png"
+            width="100%"
+        /></a>
+        <h3 class="case-text">Visit Website</h3>
+      </div>
+      <div>
+        <h3>Waterford Research Website</h3>
+        <p>
+          This website was made for the Research team at Waterford.org. Prior to
+          this, the nonprofit organization had a general website encompassing
+          all parts of their purpose, though lacked focus on the Research
+          portion of their organization. Thus, this website was set into motion!
+        </p>
+        <p>The client had the following goals:</p>
+        <ul class="design-list">
+          <li>
+            promote organization's software by showcasing its content in
+            engaging ways (modern and visually appealing)
+          </li>
+          <li>
+            emphasize strong focus on research (improving efficacy and stands
+            out against competition)
+          </li>
+          <li>
+            encourage people to provide funding for organization to meet its
+            program goals
+          </li>
+          <li>
+            make research more presentable and relevant with PDF previews and
+            summaries
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-column">
+      <div>
+        <h3>Bear Bargain Website</h3>
+        <p>
+          This website was created for college students looking to browse from a
+          catalog of second-hand items at bargained prices. There is also an
+          admin login to the site where verified users can edit and update the
+          catalog.
+        </p>
+      </div>
+      <div class="image-box">
+        <a href="https://bear-bargain.infinityfree.me/" target="_blank"
+          ><img class="case-image" src="images\Bear Bargain.png" width="100%"
+        /></a>
+        <h3 class="case-text">Visit Website</h3>
+      </div>
+    </div>
+    <div class="two-column">
+      <div class="image-box">
+        <a href="http://4300showcase.infosci.cornell.edu:5229/" target="_blank"
+          ><img
+            class="case-image"
+            src="images/ir-system-website.png"
+            width="100%"
+        /></a>
+        <h3 class="case-text">Visit Website</h3>
+      </div>
+      <div>
+        <h3>Art Alcove Website</h3>
+        <p>
+          This website was made to provide users with a way to discover
+          different types of art materials that would most appropriately fit
+          their desired art project.
+        </p>
+        <p>Users type a query into the search bar; for example:</p>
+        <ul class="design-list">
+          <li>
+            I want to paint a landscape using blue and green watercolors, cheap
+          </li>
+          <li>I need high quality colored pencils and markers</li>
+          <li>
+            I want to create a drawing with fountain pens but I only have $5
+          </li>
+        </ul>
+        <p>
+          The IR system pulls the the art material data from Blick, an art site,
+          and it determines its recommendations based on word matching with the
+          query (using a technique called cosine similarity), a text mining
+          aspect (specifically SVD) for interpretability, and product reviews.
+        </p>
+      </div>
+    </div>
+    <div class="two-column">
+      <div>
+        <h3>Ithaca Apple Harvest Festival Website</h3>
+        <p>
+          This website was made to advertise the Apple Harvest Festival for
+          2023. It contains all the information needed before attending the
+          festival!
+        </p>
+      </div>
+      <div class="image-box">
+        <a href="https://karen-malka.github.io/apple-fest/" target="_blank"
+          ><img class="case-image" src="images/Apple Fest.png" width="100%"
+        /></a>
+        <h3 class="case-text">Visit Website</h3>
+      </div>
+    </div>
+    <div class="two-column">
+      <div>
+        <h3>Radiant Recipes for Us</h3>
+        <div class="image-box half">
+          <a href="https://radiantrecipesforus.com/"
+            ><img class="case-image" src="images/Recipes.png" width="100%"
+          /></a>
+          <h3 class="case-text">Visit Website</h3>
+        </div>
+      </div>
+      <div>
+        <h3>STEM Website</h3>
+        <div class="image-box half">
+          <a href="https://stemforstudents.wixsite.com/bestem"
+            ><img class="case-image" src="images/STEM.png" width="100%"
+          /></a>
+          <h3 class="case-text">Visit Website</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h2 class="design-heading" id="websites">WEBSITES</h2>
     <div class="two-column">
       <div class="website-box">
-        <h3>Waterford Research Website Prototype</h3>
+        <h3>Waterford Research Website</h3>
         <div class="image-box">
           <a href="waterford.html"
             ><img
@@ -85,7 +236,30 @@
         </div>
       </div>
       <div class="website-box">
-        <h3>Ithaca Apple Harvest Festival Website Prototype</h3>
+        <h3>Bear Bargain Website</h3>
+        <div class="image-box">
+          <a href="bearbargain.html"
+            ><img class="case-image" src="images\Bear Bargain.png" width="100%"
+          /></a>
+          <h3 class="case-text">View Case Study</h3>
+        </div>
+      </div>
+    </div>
+    <div class="two-column">
+      <div class="website-box">
+        <h3>Art Alcove Website</h3>
+        <div class="image-box">
+          <a href="artalcove.html"
+            ><img
+              class="case-image"
+              src="images/ir-system-website.png"
+              width="100%"
+          /></a>
+          <h3 class="case-text">View Case Study</h3>
+        </div>
+      </div>
+      <div class="website-box">
+        <h3>Ithaca Apple Harvest Festival Website</h3>
         <div class="image-box">
           <a href="applefest.html"
             ><img class="case-image" src="images/Apple Fest.png" width="100%"
@@ -113,13 +287,61 @@
           <h3 class="case-text">Visit Website</h3>
         </div>
       </div>
+    </div> -->
+
+    <h2 class="design-heading" id="prototypes">PROTOTYPES</h2>
+    <div class="two-column">
+      <div>
+        <h3>Controls Proposal Walkthrough App Prototype</h3>
+        <iframe
+          style="border: 1px solid white"
+          width="550"
+          height="625"
+          src="https://embed.figma.com/proto/67sdgVBRLS03E303Unq9FP/Daikin-Building-Walkthrough-Assets?node-id=1-2&starting-point-node-id=1%3A2&embed-host=share"
+          allowfullscreen
+        ></iframe>
+        <!-- FIGMA IFRAME -->
+      </div>
+      <div>
+        <h3>Camera Cooking Helper (Igor) App Prototype</h3>
+        <iframe
+          style="border: 1px solid white"
+          width="550"
+          height="625"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBzSpEblWU3u21E3VhxlEVy%2FIgor-Camera-App%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3DFL3zBEQ6Czmf1cbN-1"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="two-column">
+      <div>
+        <h3>High School Academy App Prototype</h3>
+        <iframe
+          style="border: 1px solid white"
+          width="550"
+          height="625"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGqQCnxXZtXWQZow9wQHnOq%2FHigh-School-Academy-(Community)%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3D54HFF9IITGOjgtRB-1"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <h3>something else here</h3>
+        <iframe
+          style="border: 1px solid white"
+          width="550"
+          height="625"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBzSpEblWU3u21E3VhxlEVy%2FIgor-Camera-App%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3DFL3zBEQ6Czmf1cbN-1"
+          allowfullscreen
+        ></iframe>
+        <!-- something else here -->
+      </div>
     </div>
 
     <div id="design"></div>
 
     <h1 class="heading">Design</h1>
 
-    <h2 class="design-heading">PROJECTS</h2>
+    <h2 id="design-projects" class="design-heading">WIREFRAMES</h2>
     <div class="two-column">
       <div>
         <h3>Assessment Student Reports</h3>
@@ -162,28 +384,7 @@
         />
       </div>
     </div>
-    <div class="two-column">
-      <div>
-        <h3>High School Academy App Prototype</h3>
-        <iframe
-          style="border: 1px solid white"
-          width="550"
-          height="625"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGqQCnxXZtXWQZow9wQHnOq%2FHigh-School-Academy-(Community)%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3D54HFF9IITGOjgtRB-1"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Camera Cooking Helper (Igor) App Prototype</h3>
-        <iframe
-          style="border: 1px solid white"
-          width="550"
-          height="625"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBzSpEblWU3u21E3VhxlEVy%2FIgor-Camera-App%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3DFL3zBEQ6Czmf1cbN-1"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
+
     <div class="three-column">
       <div class="center-div">
         <h3>Axe Throwing Event Flyer</h3>
@@ -210,8 +411,34 @@
         />
       </div>
     </div>
+    <div class="three-column">
+      <div class="center-div">
+        <h3>Karoke Event Flyer</h3>
+        <img
+          src="images/Karaoke.png"
+          width="80%"
+          style="border: 1px solid white"
+        />
+      </div>
+      <div class="center-div">
+        <h3>BBQ Event Flyer</h3>
+        <img
+          src="images/bbq-flyer.png"
+          width="80%"
+          style="border: 1px solid white"
+        />
+      </div>
+      <div class="center-div">
+        <h3>Ice Skating Event Flyer</h3>
+        <img
+          src="images/ice-skating-flyer.png"
+          width="80%"
+          style="border: 1px solid white"
+        />
+      </div>
+    </div>
 
-    <h2 class="design-heading">DIGITAL ART</h2>
+    <h2 id="digital-art" class="design-heading">DIGITAL ART</h2>
     <div class="pic-grid">
       <div class="grid-row">
         <picture>
@@ -238,8 +465,6 @@
             height="1080"
           />
         </picture>
-      </div>
-      <div class="grid-row">
         <picture>
           <img
             src="images/hotair-balloon-drawing.jpg"
@@ -256,6 +481,8 @@
             height="1080"
           />
         </picture>
+      </div>
+      <div class="grid-row">
         <picture>
           <img
             src="images/flower-building-drawing.PNG"
@@ -264,8 +491,6 @@
             height="1080"
           />
         </picture>
-      </div>
-      <div class="grid-row">
         <picture>
           <img
             src="images/flower-drawing.jpg"
@@ -290,9 +515,33 @@
             height="1080"
           />
         </picture>
+        <picture>
+          <img
+            src="images/pink-yellow-flower.jpg"
+            alt=""
+            width="1080"
+            height="1080"
+          />
+        </picture>
+        <picture>
+          <img
+            src="images/mushroom-drawing.jpg"
+            alt=""
+            width="1080"
+            height="1080"
+          />
+        </picture>
+        <picture>
+          <!-- <img
+            src="images/mountain-drawing.jpg"
+            alt=""
+            width="1080"
+            height="1080"
+          /> -->
+        </picture>
       </div>
     </div>
-    <h2 class="design-heading">LOGOS</h2>
+    <h2 id="logos" class="design-heading">LOGOS</h2>
     <div class="logo-grid">
       <picture>
         <img src="images/raw-logo.PNG" alt="" width="650" height="220" />
@@ -324,7 +573,24 @@
       <picture>
         <img src="images/igor-logo.png" alt="" width="650" height="220" />
       </picture>
+      <picture>
+        <img src="images/ArtAlcove logo.png" alt="" width="300" height="300" />
+      </picture>
+      <picture>
+        <img class="bear" src="images/bear-bargain-logo.png" alt="" />
+      </picture>
     </div>
+    <div id="photography"></div>
+    <h1 class="heading">Photography</h1>
+
+    <div class="carousel-container">
+      <a class="prev" onclick="scrollSlides(-1)">&lt</a>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="slides"></div>
+      </div>
+      <a class="next" onclick="scrollSlides(1)">></a>
+    </div>
+
     <div id="myModal" class="modal hidden">
       <button id="close" aria-label="close">X</button>
       <img
@@ -344,4 +610,5 @@
   <script src="scripts/jquery-3.7.1.js"></script>
   <script src="scripts/scroll-down.js"></script>
   <script src="scripts/modal.js"></script>
+  <script src="scripts/gallery.js"></script>
 </html>

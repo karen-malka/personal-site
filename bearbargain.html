@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <title>Bear Bargain Website</title>
+  </head>
+
+  <body>
+    <a href="index.html"><button class="back-button">◀</button></a>
+    <header class="design-process1">
+      <h1>Art Alcove Website</h1>
+      <h2 class="process-heading">Overview</h2>
+      <div class="design-explanations">
+        <div>
+          <p>
+            This website was made to provide users with a way to discover
+            different types of art materials that would most appropriately fit
+            their desired art project.
+          </p>
+          <p>
+            Users type a query into the information retrieval system such as:
+          </p>
+          <ul class="design-list">
+            <li>
+              I want to paint a landscape using blue and green watercolors,
+              cheap
+            </li>
+            <li>I need high quality colored pencils and markers</li>
+            <li>I want to bead a bracelet for my best friend</li>
+            <li>
+              I want to create a drawing with fountain pens but I only have $5
+            </li>
+          </ul>
+          <p>
+            The IR system pulls the the art material data from Blick, an art
+            site, and it determines its recommendations based on word matching
+            with the query (using a technique called cosine similarity), a text
+            mining aspect (specifically SVD) for interpretability, and product
+            reviews.
+          </p>
+        </div>
+        <div class="center-div">
+          <img
+            class="bear"
+            src="images/bear-bargain-logo.png"
+            alt=""
+            width="350"
+            height="350"
+          />
+          <a href="https://bear-bargain.infinityfree.me/" target="_blank"
+            ><button class="case-study case-study2">See Website</button></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="design-process2">
+        <h2 class="process-heading">Research... 🤔</h2>
+        <div class="design-explanations">
+          <div>
+            <p>
+              I conducted user interviews to answer the following question:
+              <em
+                >How can Waterford present their research on a website
+                effectively for users?</em
+              >
+              or in other words, what are their <em>goals</em>?
+            </p>
+          </div>
+          <div>
+            <p>The results revealed the following user goals:</p>
+            <ul class="design-list">
+              <li>understand the emphasis on research and its effectiveness</li>
+              <li>comprehend the research process</li>
+              <li>
+                easily find research evidence through large focus on visual data
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="design-process1">
+        <h2 class="process-heading">Planning... ✍️</h2>
+        <div class="explanations">
+          <h3>The Layout</h3>
+          <div class="design-sketches">
+            <img
+              src="images/waterford-sketches1.jpg"
+              alt="Waterford layout sketches"
+            />
+            <img
+              src="images/waterford-sketches2.jpg"
+              alt="Waterford layout sketches"
+            />
+          </div>
+          <h3>The Theme</h3>
+          <div class="design-explanations">
+            <div>
+              <ul class="design-list">
+                <li>
+                  matching color scheme with logo (consistency and
+                  professionalism)
+                </li>
+                <li>
+                  large graphics and study results (easy to follow and
+                  important)
+                </li>
+                <li>
+                  combination of soft edges/colors and bolded text/bright
+                  colors(engaging but also neat)
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                class="color-scheme"
+                src="images/color-scheme-waterford.png"
+                alt="Waterford color scheme"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="design-process2">
+        <h2 class="process-heading">Prototyping... 📑</h2>
+        <div class="design-explanations three-column">
+          <div>
+            <h3>Interactivity Psuedocode ➡️</h3>
+            <p>
+              Below are some snippets of psuedocode implemented for the website
+            </p>
+            <h4>Hamburger Menu Psuedocode:</h4>
+            <img src="images/code1.png" alt="" class="code" />
+            <h4>Automatic Carousel Psuedocode:</h4>
+            <img src="images/code2.png" alt="" class="code" />
+          </div>
+          <div>
+            <h3>Website Mockup with Notes ➡️</h3>
+            <p>
+              This includes more detailed sketches providing html elements for
+              easier implementation
+            </p>
+            <h4>Narrow Homepage Detailed Sketch</h4>
+            <img
+              src="images/annotated-waterford-sketch.jpg"
+              alt=""
+              class="code"
+            />
+          </div>
+          <div>
+            <h3>Website Draft</h3>
+            <p>
+              This is when I finally wrote the code with working functionality.
+              I also altered some designs as I went to create a more cohesive
+              looking project.
+            </p>
+            <p>Here's an example of a change that I made:</p>
+            <div class="two-versions">
+              <div>
+                <img src="images/version1.png" alt="" />
+                <p>version 1</p>
+              </div>
+              <div>
+                <img src="images/version2.png" alt="" />
+                <p>version 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="design-process1">
+        <h2 class="process-heading">Testing... 🧑‍💻</h2>
+        <div class="design-explanations">
+          <div>
+            <h3>Usability Tests</h3>
+            <p>
+              I gave tasks for a user to complete and observed their behavior.
+              Results revealed a few parts that needed to be adjusted. Notes of
+              testing adhered to the following format:
+            </p>
+            <img
+              src="images/usability-testing.png"
+              alt="Usability Testing Table"
+              class="code"
+            />
+          </div>
+          <div>
+            <h3>Reflect and Revise</h3>
+            <p>
+              Usability testing revealed an issue with the quotations on the
+              Family Engagement page.
+            </p>
+            <p>
+              Initially, on the Family Engagement page, there was a sidebar of
+              quotations. However, it seemed too cluttered and was not very
+              usable. Thus, I created a carousel of quotes to put at the bottom
+              of the page.
+            </p>
+            <p>
+              With a few other fixes, I delivered the website to my client, took
+              their feedback, revised once again, and resulted in the final
+              version.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
