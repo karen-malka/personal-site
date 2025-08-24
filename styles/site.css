@@ -184,7 +184,9 @@ picture {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  width: 100% !important;
 }
 
 .logo-grid img {
@@ -192,8 +194,22 @@ picture {
   height: auto;
 }
 
+.programming-language {
+  height: 75px !important;
+  width: auto !important;
+  padding: 10px;
+}
+
+.ocaml {
+  height: 50px !important;
+}
+
+.canva {
+  height: 40px !important;
+}
+
 .bear {
-  width: 200px !important;
+  width: 150px !important;
   padding-left: 25px;
   padding-right: 25px;
   height: auto;
